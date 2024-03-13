@@ -10,5 +10,10 @@ router.get('/', function(req, res, next) {
 router.get('/contactUs', function(req, res, next) {
   res.render('contact');
 });
+
+//GET 404 Page
+router.get('/404', function(req, res, next) {
+  res.render('404');
+});
 //Router Works a Middleware in the System
 module.exports = router;
