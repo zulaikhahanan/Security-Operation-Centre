@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Page</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar bg-dark d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                        <div class="top-info flex-grow-0">
+                            <span class="rounded-circle btn-sm-square bg-primary me-2">
+                                <i class="fas fa-bolt text-white"></i>
+                            </span>
+                            <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                                <p class="mb-0 text-white fs-6 fw-normal">Trending</p>
+                            </div>
+                            <div class="overflow-hidden" style="width: 735px;">
+                                <div id="note" class="ps-2">
+                                    <img src="img/UiTM.jpeg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
+                                    <a href="#"><p class="text-white mb-0 link-hover">UiTM Security Operation Centre</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-link flex-lg-wrap">
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body">Tuesday, Sep 12, 2024</span></i>
+       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="/" class="navbar-brand mt-3">
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Security</p>
+                            <small class="text-body fw-normal" style="letter-spacing: 12px;">Operation Centre</small>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <p></p>
+                                <a href="/" class="nav-item nav-link active">Home</a>
+                                <a href="detail-page.html" class="nav-item nav-link">Person In Charge</a>
+                                <a href="404.html" class="nav-item nav-link">404 Page</a>
+                               
+                                </div>
+                                <a href="/contactUs" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
+                                <div class="d-flex">
+                                    <img src="img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                    <div class="d-flex align-items-center">
+                                        <strong class="fs-4 text-secondary">31°C</strong>
+                                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                            <span class="text-body">NEW YORK,</span>
+                                            <small>Mon. 10 jun 2024</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Contact Us Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="bg-light rounded p-5">
+                    <div class="row g-4">
+                        <div class="col-lg-5">
+                            <div class="">
+                                <h1 class="mb-4">Inquiries</h1>
+                                <p class="mb-4">Any Inquiries Related to SOC, You Can Contact Us Through Here</a>.</p>
+                                <div class="rounded">
+                                    <iframe class="rounded w-100" 
+                                    style="height: 425px;" src="https://www.google.com/maps/d/u/0/embed?mid=1jvYBOkKcYftY87SnVc9iHo8DHI0&msa=0&hl=en&ie=UTF8&t=m&ll=8.754795000000007%2C109.90722700000003&spn=20.736563%2C28.125&z=5&output=embed"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form action="" class="mb-4">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="w-100 form-control border-0 py-3" name="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="phone" placeholder="Enter Your Phone">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="w-100 form-control border-0" rows="6" cols="10" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="w-100 btn btn-primary form-control py-3" type="submit">Submit Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row g-4">
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Address</h4>
+                                            <p class="mb-0">Jalan Ilmu 1/1, 40450, Shah Alam, Selangor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-0">dean@fskm.uitm.edu.my
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Telephone</h4>
+                                            <p class="mb-0">(+603) 5543 5329</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fa fa-share-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Share</h4>
+                                            <div class="d-flex">
+                                                <a class="me-3" href=""><i class="fab fa-instagram text-dark link-hover"></i></a>
+                                                <a class="me-3" href=""><i class="fab fa-facebook-f text-dark link-hover"></i></a>
+                                                <a class="me-3" href=""><i class="fab fa-youtube text-dark link-hover"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us End -->
+        
+        
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark footer py-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#" class="d-flex flex-column flex-wrap">
+                        <p class="text-white mb-0 display-6">UiTM</p><p>
+                        <small class="text-light" style="letter-spacing: 11px; line-height: 0;">Security <p></p>Operation Centre</small>
+                    </a>
+                </div>
+              
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6 col-xl-3">
+                <div class="footer-item-1">
+                    <h4 class="mb-4 text-white">Get In Touch</h4>
+                    <p class="text-secondary line-h">Address: <span class="text-white">Universiti Teknologi Mara (UiTM) Shah Alam, 40450, Shah Alam, Selangor</span></p>
+                    <p class="text-secondary line-h">Email: <span class="text-white">dean@fskm.uitm.edu.my</span></p>
+                    <p class="text-secondary line-h">Phone: <span class="text-white">+603-55435329</span></p>
+                    <div class="d-flex line-h">
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-instagram text-dark"></i></a>
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark"></i></a>
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+                <div class="footer-item-2">
+                    <div class="d-flex flex-column mb-4">
+                        <h4 class="mb-4 text-white">Recent Posts</h4>
+                        <a href="#">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                    <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="d-flex flex-column ps-4">
+                                    <p class="text-uppercase text-white mb-3">Life Style</p>
+                                    <a href="#" class="h6 text-white">
+                                        Get the best speak market, news.
+                                    </a>
+                                    <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                    <img src="img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="d-flex flex-column ps-4">
+                                    <p class="text-uppercase text-white mb-3">Sports</p>
+                                    <a href="#" class="h6 text-white">
+                                        Get the best speak market, news.
+                                    </a>
+                                    <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+                <div class="d-flex flex-column text-start footer-item-3">
+                    <h4 class="mb-4 text-white">Categories</h4>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Activities</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Collaborations</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+                <div class="footer-item-4">
+                    <h4 class="mb-4 text-white">Our Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                            </div>
+                       </div>
+                       <div class="col-4">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                            </div>
+                       </div>
+                        <div class="col-4">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                            </div>
+                       </div>
+                        <div class="col-4">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                            </div>
+                       </div>
+                        <div class="col-4">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                            </div>
+                       </div>
+                       <div class="col-4">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                        </div>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Security Operation Centre</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a> UiTM Shah Alam</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 const path = require ('path');
 
+
 // Body Parser
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -29,7 +30,6 @@ app.listen(port, () => {
 
 //Routes
 app.use('/', require('./routes/index'));
-
 
 // Using ejs engine template
 app.set('views', path.join(__dirname, '/views'));
