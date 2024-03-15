@@ -20,5 +20,12 @@ router.get('/404', function(req, res, next) {
 router.get('/UiTMDashboard', function(req, res, next) {
   res.render('UiTMDashboard');
 });
+
+//GET Red Team Page
+router.get('/redTeam', function(req, res, next) {
+  res.render('RedTeam');
+});
+
+
 //Router Works a Middleware in the System
 module.exports = router;
