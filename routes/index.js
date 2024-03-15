@@ -17,8 +17,8 @@ router.get('/404', function(req, res, next) {
 });
 
 //GET Detail Page
-router.get('/detail', function(req, res, next) {
-  res.render('detail');
+router.get('/UiTMDashboard', function(req, res, next) {
+  res.render('UiTMDashboard');
 });
 //Router Works a Middleware in the System
 module.exports = router;
