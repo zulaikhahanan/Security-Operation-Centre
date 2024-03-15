@@ -22,10 +22,14 @@ router.get('/UiTMDashboard', function(req, res, next) {
 });
 
 //GET Red Team Page
-router.get('/redTeam', function(req, res, next) {
+router.get('/RedTeam', function(req, res, next) {
   res.render('RedTeam');
 });
 
+//GET Blue Team Page
+router.get('/BlueTeam', function(req, res, next) {
+  res.render('BlueTeam');
+});
 
 //Router Works a Middleware in the System
 module.exports = router;
