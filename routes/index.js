@@ -31,5 +31,10 @@ router.get('/BlueTeam', function(req, res, next) {
   res.render('BlueTeam');
 });
 
+//GET Cyber Range Page
+router.get('/CyberRange', function(req, res, next) {
+  res.render('CyberRange');
+});
+
 //Router Works a Middleware in the System
 module.exports = router;
