@@ -16,7 +16,7 @@ router.get('/404', function(req, res, next) {
   res.render('404');
 });
 
-//GET Detail Page
+//GET UiTM Dashboard Page
 router.get('/UiTMDashboard', function(req, res, next) {
   res.render('UiTMDashboard');
 });
@@ -34,6 +34,16 @@ router.get('/BlueTeam', function(req, res, next) {
 //GET Cyber Range Page
 router.get('/CyberRange', function(req, res, next) {
   res.render('CyberRange');
+});
+
+//GET How UiTM SOC  Works Page
+router.get('/UiTMSOC', function(req, res, next) {
+  res.render('HowUiTMSOCWorks');
+});
+
+//GET Activities Page
+router.get('/Activities', function(req, res, next) {
+  res.render('Activities');
 });
 
 //Router Works a Middleware in the System
