@@ -46,5 +46,10 @@ router.get('/Activities', function(req, res, next) {
   res.render('Activities');
 });
 
+//GET Person In Charge Page
+router.get('/PIC', function(req, res, next) {
+  res.render('PersonInCharge');
+});
+
 //Router Works a Middleware in the System
 module.exports = router;
